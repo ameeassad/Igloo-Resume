@@ -8,9 +8,16 @@
                 font-family: sans-serif;
             }
             
+            .parent {
+                position: relative;top: 0;
+                left: 0;
+            }
+            
             #backdrop {
-                width: 100%;
-                position: absolute;
+                position: relative;
+                top: 0;
+                left: 0;
+                border: 1px red solid;
             }
             #igloo-background {
                 width: 90%;
@@ -115,7 +122,8 @@
     </head>
     <body>
 
-<img id="backdrop" src="https://raw.githubusercontent.com/ameeassad/ameeassad.github.io/master/images/backdrop.png" /> 
+        <div class="parent">
+<img id="backdrop" src="https://raw.githubusercontent.com/ameeassad/ameeassad.github.io/master/images/backdrop.png" />
 
 <img id="igloo-background" src="https://raw.githubusercontent.com/ameeassad/ameeassad.github.io/master/images/igloo.png" /> 
 
@@ -148,6 +156,8 @@
 <img id="easel" src="https://raw.githubusercontent.com/ameeassad/ameeassad.github.io/master/images/easel.png" />
       
 <img id="airplane" src="https://raw.githubusercontent.com/ameeassad/ameeassad.github.io/master/images/airplane.png" />
+            
+        </div>
 
     </body>
 </html>
